@@ -1,0 +1,100 @@
+link {
+    display: none;
+}
+
+/* navbar */
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+}
+div.logo {
+    width: 23%;
+    padding: 1%;
+}
+nav {
+    width: 73%;
+    padding: 1%;
+    background-color: white;
+}
+ul {
+    width: 50%;
+    margin-left: auto;
+}
+.logo {
+    text-align: center;
+}
+
+/* Section heroImg */
+section.heroImg {
+    height: 600px;
+    padding: 25px;
+}
+div.content {
+    width: 100px;
+    margin: 0 auto;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    bottom: 50%;
+}
+
+/* Section My UX Skills */
+div.flexContainer {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.div {
+    width: 33%;
+}
+/* Section My Work */
+.workGrid {
+    grid-area: auto / auto / auto / auto;
+}
+.gridcontainer {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 'auto auto auto auto auto';
+}
+/* footer */
+footer {
+    background-color: #373738;
+}
+ul, li {
+    display: inline-block;
+    list-style-type: disc;
+    margin-top: 1em;
+    margin-bottom: 1 em;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 40px;
+    text-align: center;
+}
+footer.ul {
+    display: inline-block;
+    vertical-align: top;
+    padding: center;
+}
+
+@media only screen and (max-width: 600) {
+    /* Your CSS styles for your grid template area here */
+    div.flexContainer {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    .div {
+        width: 100%;
+    }
+    .workGrid {
+        grid-area: auto / auto / auto / auto;
+    }
+    .gridcontainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 300px 300px 300px;
+        grid-template-areas:
+        "bookcases bedroom patio"
+        "couches couches patio"
+        "desks desks desks";
+    }
+}
